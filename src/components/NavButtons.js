@@ -8,61 +8,62 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     myCustom: {
-      main: '#013075',
-      contrastText: '#fff'
+      main: '#4f82ff',
+      contrastText: '#4f82ff'
   },}
 });
 
 
 
-const buttons = [
-  <Button key="SobreMi" style={{'color': 'black'}}>
-    <Link to ="/aboutmy" style={{
-			    textDecoration: 'none'
-			  }}
-    >
-      <p style={{color:'black', marginTop:'0', marginBottom:'0'}}>Sobre mi</p> 
-    </Link>
-  </Button>,
-  <Button key="MisSkils">
-    <Link to ="/aboutmy" style={{
-			    textDecoration: 'none',
-			    padingTop: '2',
-			  }}
-    >
-      <p style={{color:'black', marginTop:'0', marginBottom:'0'}}>Mis Skils</p> 
-    </Link>
-  </Button>,
-  <Button key="MisProyectos">
-    <Link to ="/aboutmy" style={{
-			    textDecoration: 'none',
-			    padingTop: '2',
-			  }}
-    >
-      <p style={{color:'black', marginTop:'0', marginBottom:'0'}}>Mis Proyectos</p> 
-    </Link>
-  </Button>,
-  <Button key="Servicios">
-    <Link to ="/aboutmy" style={{
-			    textDecoration: 'none',
-			    padingTop: '2',
-			  }}
-    >
-      <p style={{color:'black', marginTop:'0', marginBottom:'0'}}>Servicios</p> 
-    </Link>
-  </Button>,
-  <Button key="Contacto">
-    <Link to ="/aboutmy" style={{
-			    textDecoration: 'none',
-			    padingTop: '2',
-			  }}
-    >
-      <p style={{color:'black', marginTop:'0', marginBottom:'0'}}>Contacto</p> 
-    </Link>
-  </Button>,
-];
 
-const NavButtons = () => {
+const NavButtons = ({switchFunctions}) => {
+  const buttons = [
+    <Button key="SobreMi" style={{'color': 'black'}}>
+      <Link to ="/aboutmy" style={{
+            textDecoration: 'none'
+          }}
+      >
+        <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Sobre mi</p> 
+      </Link>
+    </Button>,
+    <Button key="MisSkils" onClick={switchFunctions.seeMySkils}>
+      <Link to ="/myskils" style={{
+            textDecoration: 'none',
+            padingTop: '2',
+          }}
+      >
+        <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Mis Skils</p> 
+      </Link>
+    </Button>,
+    <Button key="MisProyectos">
+      <Link to ="/aboutmy" style={{
+            textDecoration: 'none',
+            padingTop: '2',
+          }}
+      >
+        <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Mis Proyectos</p> 
+      </Link>
+    </Button>,
+    <Button key="Servicios">
+      <Link to ="/aboutmy" style={{
+            textDecoration: 'none',
+            padingTop: '2',
+          }}
+      >
+        <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Servicios</p> 
+      </Link>
+    </Button>,
+    <Button key="Contacto">
+      <Link to ="/aboutmy" style={{
+            textDecoration: 'none',
+            padingTop: '2',
+          }}
+      >
+        <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Contacto</p> 
+      </Link>
+    </Button>,
+  ];
+  
   return (
     <>
       <Box

@@ -8,7 +8,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import AboutMy from './components/AboutMy.js';
+import MySkils from './components/MySkils';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +16,11 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="aboutmy" element={<App />} />
+      <Route path="myskils" element={<MySkils/>} />
+      <Route path="python" element={() => {
+				      window.location.replace('https://www.python.org/');
+				      return null;
+				    }} />
     </Routes>
   </BrowserRouter>
 );
