@@ -5,35 +5,35 @@ import Grid from '@mui/material/Grid';
 import NavButtons from './components/NavButtons.js';
 import BannerLogos from './components/BannerLogos.js';
 import AboutMy from './components/AboutMy';
+import CardSkils from './components/CardSkils';
+import MyContact from './components/MyContact';
 
 
 function App() {
 	const [aboutMy, setAboutMy] = React.useState(false);
-	const [mySkils, setMySkils] = React.useState(false);
+	const [mySkils, setMySkils] = React.useState(true);
 	const [myProyects, setMyProyects] = React.useState(false);
 	const [myServices, setMyServices] = React.useState(false);
 	const [myContact, setMyContact] = React.useState(false);
 
-	const seeAboutMy = () => {};
-	const seeMySkils = () => {console.log('see my skils')};
-	const seeMyProyects = () => {};
-	const seeMyServices = () => {};
-	const seeMyContact = () => {};
-
 	const switchFunctions = {
-		seeAboutMy: seeAboutMy(),
-		seeMySkils: seeMySkils(),
-		seeMyProyects: seeMyProyects(),
-		seeMyServices: seeMyServices(),
-		seeMyContact: seeMyContact()
+		seeAboutMy: setAboutMy,
+		seeMySkils: setMySkils,
+		seeMyProyects: setMyProyects,
+		seeMyServices: setMyServices,
+		seeMyContact: setMyContact
 	}
 
-	const statusViews = [aboutMy, mySkils, myProyects, myServices, myContact]
 
 	const SwitchViewBody = () => {
-		
-		for (){
-
+		if (aboutMy) {
+			return <AboutMy />
+		} else if (mySkils) {
+			return <CardSkils />
+		} else if (myContact) {
+			return (
+				<MyContact />
+			);
 		}
 	}
 
@@ -57,11 +57,11 @@ function App() {
 						'margin-top': '50%'
 					}}
 					>
-						<NavButtons switchFunctions={switchFunctions}/>
+						<NavButtons switchFunctions={switchFunctions} />
 					</div>
 				</Grid>
 				<Grid item xs={10}>
-					<AboutMy />
+					<SwitchViewBody />
 				</Grid>
 			</Grid>
 		</Box>

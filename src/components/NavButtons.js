@@ -10,58 +10,86 @@ const theme = createTheme({
     myCustom: {
       main: '#4f82ff',
       contrastText: '#4f82ff'
-  },}
+  },
+  cvButtomColor:{
+    main:'#4f82ff',
+    contrastText:'#ffffff'
+  }
+}
 });
 
 
 
 
-const NavButtons = ({switchFunctions}) => {
+const NavButtons = ({switchFunctions, props}) => {
+  const setViewAboutMy = () => {
+    switchFunctions.seeAboutMy(true);
+    switchFunctions.seeMySkils(false);
+    switchFunctions.seeMyProyects(false);
+    switchFunctions.seeMyServices(false);
+    switchFunctions.seeMyContact(false);
+    console.log('Cambiando estado de aboutMy')
+   };
+   const setViewMySkils = () => {
+    switchFunctions.seeAboutMy(false);
+    switchFunctions.seeMySkils(true);
+    switchFunctions.seeMyProyects(false);
+    switchFunctions.seeMyServices(false);
+    switchFunctions.seeMyContact(false);
+    console.log('Cambiando estado de seeMySkils')
+   };
+   const setViewMyProyects = () => {
+    switchFunctions.seeAboutMy(false);
+    switchFunctions.seeMySkils(false);
+    switchFunctions.seeMyProyects(true);
+    switchFunctions.seeMyServices(false);
+    switchFunctions.seeMyContact(false);
+    console.log('Cambiando estado de seeMyProyects')
+   };
+   const setViewMyServices = () => {
+    switchFunctions.seeAboutMy(false);
+    switchFunctions.seeMySkils(false);
+    switchFunctions.seeMyProyects(false);
+    switchFunctions.seeMyServices(true);
+    switchFunctions.seeMyContact(false);
+    console.log('Cambiando estado de seeMyServices')
+   };
+   const setViewMyContact = () => {
+    switchFunctions.seeAboutMy(false);
+    switchFunctions.seeMySkils(false);
+    switchFunctions.seeMyProyects(false);
+    switchFunctions.seeMyServices(false);
+    switchFunctions.seeMyContact(true);
+    console.log('Cambiando estado de seeMyContact')
+   }
   const buttons = [
-    <Button key="SobreMi" style={{'color': 'black'}}>
-      <Link to ="/aboutmy" style={{
-            textDecoration: 'none'
-          }}
-      >
+    <Button key="SobreMi" style={{'color': 'black'}} onClick={()=>setViewAboutMy()}>
+     
         <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Sobre mi</p> 
-      </Link>
     </Button>,
-    <Button key="MisSkils" onClick={switchFunctions.seeMySkils}>
-      <Link to ="/myskils" style={{
-            textDecoration: 'none',
-            padingTop: '2',
-          }}
-      >
+    <Button key="MisSkils"  onClick={()=>setViewMySkils()}>
         <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Mis Skils</p> 
-      </Link>
     </Button>,
-    <Button key="MisProyectos">
-      <Link to ="/aboutmy" style={{
-            textDecoration: 'none',
-            padingTop: '2',
-          }}
-      >
+    <Button key="MisProyectos" onClick={()=>setViewMyProyects()}>
         <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Mis Proyectos</p> 
-      </Link>
     </Button>,
-    <Button key="Servicios">
-      <Link to ="/aboutmy" style={{
-            textDecoration: 'none',
-            padingTop: '2',
-          }}
-      >
+    <Button key="Servicios" onClick={()=>setViewMyServices()}>
         <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Servicios</p> 
-      </Link>
     </Button>,
-    <Button key="Contacto">
-      <Link to ="/aboutmy" style={{
-            textDecoration: 'none',
-            padingTop: '2',
-          }}
-      >
+    <Button key="Contacto" onClick={()=>setViewMyContact()}>
         <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Contacto</p> 
-      </Link>
     </Button>,
+    <Button variant="contained" component="label" color="cvButtomColor">
+    <Link to="../../public/CV_RicardoBenitez2022Dev.pdf"
+      target="_bank"
+      style={{
+        'text-decoration':'none'
+      }}
+      download
+    >
+      <p style={{marginTop:'1px', marginBottom:'1px', color:'black'}}>Descargar CV</p>
+    </Link>
+  </Button>
   ];
   
   return (

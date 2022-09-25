@@ -35,23 +35,22 @@ function AboutMy() {
 	      <h1 >Sobre mi...</h1>
 	      <br/>
 	      <p >
-		Comence en el mundo de la informatica desde joven por curiosidad. Comence con un curso
-		de reparacion de computadoras en donde comprendi los conceptos basicos del funcionamiento
-		de un compoutador. Luego de terminar el colegio secundario ingrese a cursar la carrera 
-		de profesor en Ciencias Fisicas en la Uiversidad Nacional de Misiones, esta carrera me 
+		Comence en el mundo de la informática desde joven por curiosidad. Inicié con un curso
+		de reparacion de computadoras en donde comprendí los conceptos generales del funcionamiento
+		de un computador. Luego de terminar el colegio secundario ingrese a cursar la carrera 
+		de profesor en Ciencias Físicas en la Universidad Nacional de Misiones, esta carrera me 
 		permitio ver todo un mundo nuevo. Por motivos personales la carrera no la termine, deje 
 		la misma sin cursar el ultimo año.<br/> <br/> 
-		Con todo esto nunca disminuyo mi interes por la informatica. Con lo que consegui mi primer
-		empleo en el area como SuportDesktop en una PyMES en la cual realizaba soporte a oficianas
+		Con todo esto nunca disminuyó mi interés por la informática. Conseguí mi primer
+		empleo en el área como SuportDesktop en una PyMES en la cual realizaba soporte a oficinas
 		pasando por todos los aspectos, desktop, notebooks, servers, imporesoras, redes, seguridad,
-		gestion de emails, etc.<br/> <br/>
-		En el camino me intereso la programacion ya que realizaba pequeños scripts en Windows para 
-		automatizar pequeñas cosas en servidores. Des este modo me fui metiendo al mundo del 
-		scripting y a la programacion. Actualmente me encuentro trabajando exclusivamente en
-		servidores linux y programacion desde hace aproximadamente 4 años. El lenguaje que manejo
-		con mas experiencia es Python. Tambien tengo experiencia con JavaScript pero como trabajo
-		mas en el lado del servidor suelo usar mas Python.<br/> <br/>
-		En el 2022 comence a estudiar para Analista de Sistemas en el Instituto Irso de la cual me
+		gestión de servidores de correos, etc.<br/> <br/>
+		En el camino me interesó la programación ya que realizaba pequeños scripts en Windows para 
+		automatizar pequeñas cosas en servidores. De este modo me fui metiendo al mundo del 
+		scripting y a la programación. Actualmente me encuentro trabajando exclusivamente en
+		servidores linux y programación desde hace aproximadamente 4 años. El lenguaje que principal
+		con el que traajo es Python, a parte de este tambien tengo experiencia con JavaScript.<br/> <br/>
+		En el 2022 comencé a estudiar para Analista de Sistemas en el Instituto IRSO. Actualmente me
 		me encuentro cursando 6 materias anuales con todos los trabajos y examenes aprobados hasta
 		el momento.
 	      </p>
