@@ -7,7 +7,8 @@ import BannerLogos from './components/BannerLogos.js';
 import AboutMy from './components/AboutMy';
 import CardSkils from './components/CardSkils';
 import MyContact from './components/MyContact';
-
+import MyProjects from './components/MyProjects';
+import Services from './components/Services';
 
 function App() {
 	const [aboutMy, setAboutMy] = React.useState(false);
@@ -33,6 +34,14 @@ function App() {
 		} else if (myContact) {
 			return (
 				<MyContact />
+			);
+		} else if (myProyects) {
+			return (
+				<MyProjects />
+			);
+		} else if (myServices){
+			return (
+				<Services />
 			);
 		}
 	}

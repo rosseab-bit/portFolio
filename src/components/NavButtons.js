@@ -65,19 +65,19 @@ const NavButtons = ({switchFunctions, props}) => {
   const buttons = [
     <Button key="SobreMi" style={{'color': 'black'}} onClick={()=>setViewAboutMy()}>
      
-        <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Sobre mi</p> 
+        <p style={{color:'white', marginTop:'0', marginBottom:'0', fontSize: '20px'}}>Sobre mi</p> 
     </Button>,
     <Button key="MisSkils"  onClick={()=>setViewMySkils()}>
-        <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Mis Skils</p> 
+        <p style={{color:'white', marginTop:'0', marginBottom:'0', fontSize: '20px'}}>Mis Skils</p> 
     </Button>,
     <Button key="MisProyectos" onClick={()=>setViewMyProyects()}>
-        <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Mis Proyectos</p> 
+        <p style={{color:'white', marginTop:'0', marginBottom:'0', fontSize: '20px'}}>Mis Proyectos</p> 
     </Button>,
     <Button key="Servicios" onClick={()=>setViewMyServices()}>
-        <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Servicios</p> 
+        <p style={{color:'white', marginTop:'0', marginBottom:'0', fontSize: '20px'}}>Servicios</p> 
     </Button>,
     <Button key="Contacto" onClick={()=>setViewMyContact()}>
-        <p style={{color:'white', marginTop:'0', marginBottom:'0'}}>Contacto</p> 
+        <p style={{color:'white', marginTop:'0', marginBottom:'0', fontSize: '20px'}}>Contacto</p> 
     </Button>,
     <Button variant="contained" component="label" color="cvButtomColor">
     <Link to="../../public/CV_RicardoBenitez2022Dev.pdf"
@@ -87,7 +87,7 @@ const NavButtons = ({switchFunctions, props}) => {
       }}
       download
     >
-      <p style={{marginTop:'1px', marginBottom:'1px', color:'black'}}>Descargar CV</p>
+      <p style={{marginTop:'1px', marginBottom:'1px', color:'black', fontSize: '20px'}}>Descargar CV</p>
     </Link>
   </Button>
   ];

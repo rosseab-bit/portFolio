@@ -20,7 +20,7 @@ function AboutMy() {
 	      'margin-top': '50px',
 	    }}
 	  >
-	    <div style={{'border-radius':'20px', 'margin-top': '80px'}}>
+	    <div style={{'border-radius':'20px', 'margin-top': '130px'}}>
 	      <img src={AboutPicture} 
 		    width='300px' 
 		    height='auto' 
@@ -34,7 +34,7 @@ function AboutMy() {
 	      <div style={{'margin-top': '30px', 'margin-left':'20px', 'margin-right':'10px'}}>
 	      <h1 >Sobre mi...</h1>
 	      <br/>
-	      <p >
+	      <p style={{fontSize: 20}}>
 		Comence en el mundo de la informática desde joven por curiosidad. Inicié con un curso
 		de reparacion de computadoras en donde comprendí los conceptos generales del funcionamiento
 		de un computador. Luego de terminar el colegio secundario ingrese a cursar la carrera 

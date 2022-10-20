@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 
 const MyContact = () => {
     const redirectUrls = (url) => {
-        window.location.replace(url);
+        window.open(url, '_blank', 'noopener,noreferrer');
         return null;
     }
     const mailContact = (mailto) => {
