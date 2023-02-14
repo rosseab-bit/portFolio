@@ -9,10 +9,12 @@ import CardSkils from './components/CardSkils';
 import MyContact from './components/MyContact';
 import MyProjects from './components/MyProjects';
 import Services from './components/Services';
+import MyNavBar from './components/MyNavBar';
+
 
 function App() {
-	const [aboutMy, setAboutMy] = React.useState(false);
-	const [mySkils, setMySkils] = React.useState(true);
+	const [aboutMy, setAboutMy] = React.useState(true);
+	const [mySkils, setMySkils] = React.useState(false);
 	const [myProyects, setMyProyects] = React.useState(false);
 	const [myServices, setMyServices] = React.useState(false);
 	const [myContact, setMyContact] = React.useState(false);
@@ -48,6 +50,14 @@ function App() {
 
 	return (
 		<Box sx={{ flexGrow: 1 }}>
+				<div style={{
+						'display': 'flex',
+						'flex-direction': 'row',
+						'justify-content': 'center'
+					}}
+					>
+						<NavButtons switchFunctions={switchFunctions} />
+					</div>
 			<Grid container spacing={2}>
 				<Grid item xs={12}
 					sx={{
@@ -58,18 +68,9 @@ function App() {
 					}}
 				>
 					<BannerLogos />
+					
 				</Grid>
-				<Grid item xs={2}>
-					<div style={{
-						'display': 'flex',
-						'flex-direction': 'column',
-						'margin-top': '50%'
-					}}
-					>
-						<NavButtons switchFunctions={switchFunctions} />
-					</div>
-				</Grid>
-				<Grid item xs={10}>
+				<Grid item xs={12} sx={{marginLeft: 20, marginRight: 20}}>
 					<SwitchViewBody />
 				</Grid>
 			</Grid>

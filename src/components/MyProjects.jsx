@@ -20,7 +20,7 @@ const MyProjects = () => {
           "flex-direction": "column",
           "margin-top": "10%",
           "margin-right": "10%",
-          "margin-left": "10%",
+          "margin-left": "20%",
         }}
       >
         <div style={{ "width": "80%" }}>

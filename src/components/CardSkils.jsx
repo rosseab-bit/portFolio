@@ -93,11 +93,12 @@ const CardSkils = () => {
         'flex-direction': 'row',
         'flex-wrap': 'wrap',
         'margin-top': '20px',
-        'margin-right': '20px'
+        "margin-right": "10%",
+        "margin-left": "10%",
       }}
       >
         {skilsDescriptions.map((item) => (
-          <Card sx={{ maxWidth: 180, maxHeight: 350, marginLeft: 1, marginTop: 5 }}>
+          <Card sx={{ maxWidth: 260, maxHeight: 350, marginLeft: 1, marginTop: 5 }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -105,7 +106,7 @@ const CardSkils = () => {
                 image={item.image_src}
                 alt="green iguana"
               />
-              <CardContent sx={{height: 105}}>
+              <CardContent sx={{height: 160}}>
                 <Typography gutterBottom variant="h6" component="div">
                   {item.name}
                 </Typography>
