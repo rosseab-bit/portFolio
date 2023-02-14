@@ -48,11 +48,10 @@ function AboutMy() {
 		En el camino me interesó la programación ya que realizaba pequeños scripts en Windows para 
 		automatizar pequeñas cosas en servidores. De este modo me fui metiendo al mundo del 
 		scripting y a la programación. Actualmente me encuentro trabajando exclusivamente en
-		servidores linux y programación desde hace aproximadamente 4 años. El lenguaje que principal
+		servidores linux y programación desde hace aproximadamente 4 años. El lenguaje principal
 		con el que trabajo es Python, a parte de este tambien tengo experiencia con JavaScript.<br/> <br/>
 		En el 2022 comencé a estudiar para Analista de Sistemas en el Instituto IRSO. Actualmente me
-		me encuentro cursando 6 materias anuales con todos los trabajos y examenes aprobados hasta
-		el momento.
+		me encuentro en 2do año de la carrera.
 	      </p>
 	      </div>
 	    </div>

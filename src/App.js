@@ -10,9 +10,12 @@ import MyContact from './components/MyContact';
 import MyProjects from './components/MyProjects';
 import Services from './components/Services';
 import MyNavBar from './components/MyNavBar';
+import { useMediaQuery } from '@mui/material';
+import NavBarMobile from './components/NavBarMobile';
 
 
 function App() {
+	const switchMobile = useMediaQuery('(min-width:600px)')
 	const [aboutMy, setAboutMy] = React.useState(true);
 	const [mySkils, setMySkils] = React.useState(false);
 	const [myProyects, setMyProyects] = React.useState(false);
@@ -49,32 +52,39 @@ function App() {
 	}
 
 	return (
+		<>
+		{ switchMobile ? 
 		<Box sx={{ flexGrow: 1 }}>
-				<div style={{
-						'display': 'flex',
-						'flex-direction': 'row',
-						'justify-content': 'center'
-					}}
-					>
-						<NavButtons switchFunctions={switchFunctions} />
-					</div>
-			<Grid container spacing={2}>
-				<Grid item xs={12}
-					sx={{
-						display: 'flex',
-						flexDirection: 'row',
-						justifyContent: 'center',
-						marginTop: 5
-					}}
-				>
-					<BannerLogos />
-					
-				</Grid>
-				<Grid item xs={12} sx={{marginLeft: 20, marginRight: 20}}>
-					<SwitchViewBody />
-				</Grid>
-			</Grid>
-		</Box>
+		<div style={{
+				'display': 'flex',
+				'flex-direction': 'row',
+				'justify-content': 'center'
+			}}
+			>
+				<NavButtons switchFunctions={switchFunctions} />
+			</div>
+	<Grid container spacing={2}>
+		<Grid item xs={12}
+			sx={{
+				display: 'flex',
+				flexDirection: 'row',
+				justifyContent: 'center',
+				marginTop: 5
+			}}
+		>
+			<BannerLogos />
+			
+		</Grid>
+		<Grid item xs={12} sx={{marginLeft: 20, marginRight: 20}}>
+			<SwitchViewBody />
+		</Grid>
+	</Grid>
+</Box>
+		:
+		<NavBarMobile /> 
+		}
+		
+		</>
 	);
 }
 
