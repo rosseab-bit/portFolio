@@ -41,8 +41,9 @@ import CardMedia from '@mui/material/CardMedia';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import WebDesignImg from '../static/img/web_design.jpg'
 import ServicesServer from '../static/img/manage_servers.png';
-import FixComputers from '../static/img/fix_computer.png'; 
+import FixComputers from '../static/img/fix_computer.png';
 import CloudDownloadSharpIcon from '@mui/icons-material/CloudDownloadSharp';
+import Avatar from '@mui/material/Avatar';
 
 const drawerWidth = 240;
 
@@ -120,120 +121,174 @@ export default function NavBarMobile() {
                         <b>servidores linux y scripting</b> desde hace aproximadamente 4 años. El lenguaje principal
                         con el que trabajo es <b>Python</b>, a parte de este tambien tengo experiencia con <b>JavaScript</b>.
                         En el 2022 comencé a estudiar para <b>Analista de Sistemas</b> en el Instituto IRSO. Actualmente me
-                        me encuentro <b>2do año de la carrera</b>.
+                        encuentro <b>2do año de la carrera</b>.
                     </Typography>
+                    <div
+                        style={{
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            alignItems: 'center',
+                            alignContent: 'center',
+                            justifyContent: 'center',
+                            marginTop: 40
+                        }}
+                    >
+                        <Avatar
+                            alt="Python"
+                            src={PythonLogo}
+                            sx={{ width: 60, height: 60 }}
+                        />
+                        <Avatar
+                            alt="JavaScript"
+                            src={JavaScriptLogo}
+                            sx={{ width: 60, height: 60 }}
+                        />
+                        <Avatar
+                            alt="Docker"
+                            src={DockerLogo}
+                            sx={{ width: 60, height: 60 }}
+                        />
+                    </div>
+                    <div
+                        style={{
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            alignItems: 'center',
+                            alignContent: 'center',
+                            justifyContent: 'center',
+                            marginTop: 10
+                        }}
+
+                    >
+                        <Avatar
+                            alt="Django"
+                            src={DjangoLogo}
+                            sx={{ width: 60, height: 60 }}
+                        />
+                        <Avatar
+                            alt="Flask"
+                            src={FlaskLogo}
+                            sx={{ width: 60, height: 60 }}
+                        />
+                        <Avatar
+                            alt="ReactJs"
+                            src={ReactLogo}
+                            sx={{ width: 60, height: 60 }}
+                        />
+
+                    </div>
                 </>
             );
         } else if (mySkills) {
             setTitleBar('Mis Skills');
             const skilsDescriptions = [
                 {
-                  'name': 'Python',
-                  'description': 'Desarrollo de scripting, automatización, programación orientada a objetos. Desarrollo de aplicaciones web y escritorio.',
-                  'url': 'https://www.python.org/',
-                  'image_src': PythonLogo,
+                    'name': 'Python',
+                    'description': 'Desarrollo de scripting, automatización, programación orientada a objetos. Desarrollo de aplicaciones web y escritorio.',
+                    'url': 'https://www.python.org/',
+                    'image_src': PythonLogo,
                 },
                 {
-                  'name': 'Flask',
-                  'description': 'Desarrollo de APIs y pequeños software de gestión',
-                  'url': 'https://flask.palletsprojects.com/en/2.2.x/',
-                  'image_src': FlaskLogo,
+                    'name': 'Flask',
+                    'description': 'Desarrollo de APIs y pequeños software de gestión',
+                    'url': 'https://flask.palletsprojects.com/en/2.2.x/',
+                    'image_src': FlaskLogo,
                 },
                 {
-                  'name': 'DJango',
-                  'description': 'Curso en EducacionIT aprobado, desarrollo de Modelos, Templates y apps',
-                  'url': 'https://www.djangoproject.com/',
-                  'image_src': DjangoLogo,
+                    'name': 'DJango',
+                    'description': 'Curso en EducacionIT aprobado, desarrollo de Modelos, Templates y apps',
+                    'url': 'https://www.djangoproject.com/',
+                    'image_src': DjangoLogo,
                 },
                 {
-                  'name': 'Tkinter',
-                  'description': 'Desarrollo de aplicaciónes para escritorio, stock, almacenador de contraseñas.',
-                  'url': 'https://docs.python.org/es/3/library/tkinter.html',
-                  'image_src': PythonLogo,
+                    'name': 'Tkinter',
+                    'description': 'Desarrollo de aplicaciónes para escritorio, stock, almacenador de contraseñas.',
+                    'url': 'https://docs.python.org/es/3/library/tkinter.html',
+                    'image_src': PythonLogo,
                 },
                 {
-                  'name': 'Java Script',
-                  'description': 'Experiencia en programación orientada a objetos, interacción con el DOM y aplicaciones con Frameworks',
-                  'url': 'https://www.javascript.com/',
-                  'image_src': JavaScriptLogo,
+                    'name': 'Java Script',
+                    'description': 'Experiencia en programación orientada a objetos, interacción con el DOM y aplicaciones con Frameworks',
+                    'url': 'https://www.javascript.com/',
+                    'image_src': JavaScriptLogo,
                 },
                 {
-                  'name': 'React',
-                  'description': 'Desarrollo de componentes y aplicaciónes en React JS y React Native',
-                  'url': 'https://es.reactjs.org/',
-                  'image_src': ReactLogo,
+                    'name': 'React',
+                    'description': 'Desarrollo de componentes y aplicaciónes en React JS y React Native',
+                    'url': 'https://es.reactjs.org/',
+                    'image_src': ReactLogo,
                 },
                 {
-                  'name': 'Docker',
-                  'description': 'Creación de contenedores para apps en React y Flask. Creacion de contenedores de bases de datos. DockerFile.',
-                  'url': 'https://www.docker.com/',
-                  'image_src': DockerLogo,
+                    'name': 'Docker',
+                    'description': 'Creación de contenedores para apps en React y Flask. Creacion de contenedores de bases de datos. DockerFile.',
+                    'url': 'https://www.docker.com/',
+                    'image_src': DockerLogo,
                 },
                 {
-                  'name': 'Linux',
-                  'description': 'Instalación y configuración de servidores Linux OpenSuse, Ubuntu, RedHat. Y derivados de Debian.',
-                  'url': 'https://es.wikipedia.org/wiki/GNU/Linux',
-                  'image_src': LinuxImage,
+                    'name': 'Linux',
+                    'description': 'Instalación y configuración de servidores Linux OpenSuse, Ubuntu, RedHat. Y derivados de Debian.',
+                    'url': 'https://es.wikipedia.org/wiki/GNU/Linux',
+                    'image_src': LinuxImage,
                 },
                 {
-                  'name': 'GitHub',
-                  'description': 'Creacion de repositorios, manejo de ramas y fusiones.',
-                  'url': 'https://github.com/',
-                  'image_src': GitHubImage,
+                    'name': 'GitHub',
+                    'description': 'Creacion de repositorios, manejo de ramas y fusiones.',
+                    'url': 'https://github.com/',
+                    'image_src': GitHubImage,
                 },
                 {
-                  'name': 'Bash Script',
-                  'description': 'Desarrollo de scripts y automatizaciones en Linux Server',
-                  'url': 'https://es.wikipedia.org/wiki/Bash',
-                  'image_src': BashImage,
+                    'name': 'Bash Script',
+                    'description': 'Desarrollo de scripts y automatizaciones en Linux Server',
+                    'url': 'https://es.wikipedia.org/wiki/Bash',
+                    'image_src': BashImage,
                 },
                 {
-                  'name': 'MySQL',
-                  'description': 'Instalacion del motor, creacion de bases de datos y tablas.',
-                  'url': 'https://www.mysql.com/',
-                  'image_src': MySQLImage,
+                    'name': 'MySQL',
+                    'description': 'Instalacion del motor, creacion de bases de datos y tablas.',
+                    'url': 'https://www.mysql.com/',
+                    'image_src': MySQLImage,
                 }
-              ]
+            ]
             return (
                 <>
                     <div style={{
-        'display': 'flex',
-        'flex-direction': 'column',
-        'flex-wrap': 'wrap',
-        'margin-top': '20px',
-        "margin-right": "10%",
-        "margin-left": "10%",
-      }}
-      >
-        {skilsDescriptions.map((item) => (
-          <Card sx={{ maxWidth: 280, maxHeight: 350, marginLeft: 1, marginTop: 5 }}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="150"
-                image={item.image_src}
-                alt="green iguana"
-              />
-              <CardContent sx={{height: 150}}>
-                <Typography gutterBottom variant="h6" component="div">
-                  {item.name}
-                </Typography>
-                <Typography variant="body4" color="text.secondary" style={{fontSize: 13}}>
-                  {item.description}
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <a href={item.url} target="_blank" style={{ textDecoration: 'none' }} rel="noreferrer">
-                <Button size="small" color="primary">
-                  {item.name}
-                </Button>
-              </a>
-            </CardActions>
-          </Card>
-        ))}
+                        'display': 'flex',
+                        'flex-direction': 'column',
+                        'flex-wrap': 'wrap',
+                        'margin-top': '20px',
+                        "margin-right": "10%",
+                        "margin-left": "10%",
+                    }}
+                    >
+                        {skilsDescriptions.map((item) => (
+                            <Card sx={{ maxWidth: 280, maxHeight: 350, marginLeft: 1, marginTop: 5 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="150"
+                                        image={item.image_src}
+                                        alt="green iguana"
+                                    />
+                                    <CardContent sx={{ height: 150 }}>
+                                        <Typography gutterBottom variant="h6" component="div">
+                                            {item.name}
+                                        </Typography>
+                                        <Typography variant="body4" color="text.secondary" style={{ fontSize: 13 }}>
+                                            {item.description}
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <a href={item.url} target="_blank" style={{ textDecoration: 'none' }} rel="noreferrer">
+                                        <Button size="small" color="primary">
+                                            {item.name}
+                                        </Button>
+                                    </a>
+                                </CardActions>
+                            </Card>
+                        ))}
 
-      </div>
+                    </div>
                 </>
             );
         } else if (myServices) {
@@ -257,38 +312,38 @@ export default function NavBarMobile() {
             ]
             return (
                 <>
-                <div style={{
-                'display': 'flex',
-                'flex-direction': 'column',
-                'flex-wrap': 'wrap',
-                alignContent: 'center',
-                'margin-top': '20px',
-                'margin-right': '20px',
-                'margin-left': '10%'
-            }}
-            >
-                {listServices.map((item) => (
-                    <Card sx={{ maxWidth: 300, maxHeight: 300, marginLeft: 1, marginTop: 5 }}>
-                        <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                height="100"
-                                image={item.image_src}
-                                alt="green iguana"
-                            />
-                            <CardContent sx={{ height: 500 }}>
-                                <p>
-                                    {item.name}
-                                </p>
-                                <Typography variant="body4" style={{fontSize: 15}} color="text.secondary">
-                                    {item.description}
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                ))}
+                    <div style={{
+                        'display': 'flex',
+                        'flex-direction': 'column',
+                        'flex-wrap': 'wrap',
+                        alignContent: 'center',
+                        'margin-top': '20px',
+                        'margin-right': '20px',
+                        'margin-left': '10%'
+                    }}
+                    >
+                        {listServices.map((item) => (
+                            <Card sx={{ maxWidth: 300, maxHeight: 300, marginLeft: 1, marginTop: 5 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="100"
+                                        image={item.image_src}
+                                        alt="green iguana"
+                                    />
+                                    <CardContent sx={{ height: 500 }}>
+                                        <p>
+                                            {item.name}
+                                        </p>
+                                        <Typography variant="body4" style={{ fontSize: 15 }} color="text.secondary">
+                                            {item.description}
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        ))}
 
-            </div>
+                    </div>
                 </>
             );
         } else if (myContact) {
@@ -311,7 +366,7 @@ export default function NavBarMobile() {
                         >
                             <LinkedInIcon sx={{ fontSize: 35, color: '#0077B5' }} />
                         </IconButton>
-                        <p style={{color: 'black'}}>LinkedIn</p>
+                        <p style={{ color: 'black' }}>LinkedIn</p>
                         <IconButton
                             onClick={() => mailContact('mailto:r.j.abrahambenitez@gmail.com')}
                             color="primary"
@@ -319,7 +374,7 @@ export default function NavBarMobile() {
                         >
                             <MailOutlineIcon sx={{ fontSize: 35, color: '#EA4335' }} />
                         </IconButton>
-                        <p style={{color: 'black'}}>r.j.abrahambenitez@gmail.com</p>
+                        <p style={{ color: 'black' }}>r.j.abrahambenitez@gmail.com</p>
                         <IconButton
                             onClick={() => redirectUrls('https://wa.me/5491133476418')}
                             color="primary"
@@ -327,7 +382,7 @@ export default function NavBarMobile() {
                         >
                             <WhatsAppIcon sx={{ fontSize: 35, color: '#25D366' }} />
                         </IconButton>
-                        <p style={{color: 'black'}}>Whatsapp: 1133476418</p>
+                        <p style={{ color: 'black' }}>Whatsapp: 1133476418</p>
                     </div>
                 </>
             );
@@ -382,7 +437,7 @@ export default function NavBarMobile() {
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             <AppBar position="fixed" open={open} >
-                <Toolbar sx={{backgroundColor: '#21222c'}}>
+                <Toolbar sx={{ backgroundColor: '#21222c' }}>
                     <Typography variant="h6" noWrap sx={{ flexGrow: 1, backgroundColor: '#21222c' }} component="div">
                         {titleBar}
                     </Typography>
@@ -464,9 +519,9 @@ export default function NavBarMobile() {
                             <ListItemText primary='Contacto' />
                         </ListItemButton>
                     </ListItem>
-                    
+
                     <ListItem key='mycv' disablePadding>
-                        <ListItemButton onClick={()=>window.open('https://drive.google.com/file/d/1edOpYS9mmL46k8N2OYq5AFInNHtokrw8/view?usp=sharing', '_blank', 'noopener,noreferrer')}>
+                        <ListItemButton onClick={() => window.open('https://drive.google.com/file/d/1edOpYS9mmL46k8N2OYq5AFInNHtokrw8/view?usp=sharing', '_blank', 'noopener,noreferrer')}>
                             <ListItemIcon>
                                 <CloudDownloadSharpIcon />
                             </ListItemIcon>
