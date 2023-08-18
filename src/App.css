@@ -39,3 +39,32 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* estilo maquina de escribir */
+.containerMyName {
+  margin: auto;
+  display: table;
+}
+.myName {
+  position: relative;
+  color: white;
+  font-size: 2em !important;
+}
+.myName .myNameType {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: #21222c;
+  border-left: 1px solid #000;
+  animation: escribir 5s steps(15) infinite alternate;
+}
+
+@keyframes escribir {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* estilo maquina de escribir */
