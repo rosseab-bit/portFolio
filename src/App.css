@@ -48,23 +48,33 @@ body {
 .myName {
   position: relative;
   color: white;
+  float: left;
   font-size: 2em !important;
 }
-.myName .myNameType {
+/*.myName .myNameType {
   position: absolute;
   right: 0;
   width: 0;
   background: #21222c;
   border-left: 1px solid #000;
   animation: escribir 5s steps(15) infinite alternate;
+}*/
+
+.spanAnimation {
+  position: absolute;
+  right: 0;
+  width: 0; 
+  background-color: #21222c;
+  border-left: 1px solid #FFF;
+  animation: escribir 5s steps(16) infinite alternate;
 }
 
 @keyframes escribir {
   from {
-    width: 0%;
+    width: 100%;
   }
   to {
-    width: 100%;
+    width: 0;
   }
 }
 /* estilo maquina de escribir */

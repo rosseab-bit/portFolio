@@ -34,8 +34,8 @@ function AboutMy() {
           />
           <div className="containerMyName">
             <h1 className="myName">
-              Ricardo Benitez
-            </h1>
+              Ricardo Benitez .<span className="spanAnimation">&#160;</span>
+	    </h1>
           </div>
         </div>
         <div
