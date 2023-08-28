@@ -44,6 +44,7 @@ import ServicesServer from '../static/img/manage_servers.png';
 import FixComputers from '../static/img/fix_computer.png';
 import CloudDownloadSharpIcon from '@mui/icons-material/CloudDownloadSharp';
 import Avatar from '@mui/material/Avatar';
+import '../AppMobile.css';
 
 const drawerWidth = 240;
 
@@ -117,11 +118,11 @@ export default function NavBarMobile() {
             return (
                 <>
                     <Typography paragraph>
-                        Actualmente me encuentro trabajando exclusivamente en
-                        <b>servidores linux y scripting</b> desde hace aproximadamente 4 años. El lenguaje principal
-                        con el que trabajo es <b>Python</b>, a parte de este tambien tengo experiencia con <b>JavaScript</b>.
-                        En el 2022 comencé a estudiar para <b>Analista de Sistemas</b> en el Instituto IRSO. Actualmente me
-                        encuentro <b>2do año de la carrera</b>.
+			Trabajo en el sector de IT desde hace varios años pase por el sector de <b>SysAdmin y DevOps</b> con 
+                        <b> servidores linux y scripting</b>. Trabajo con <b>Python y JavaScript</b>. En el 2022 comencé a 
+			estudiar para <b>Analista de Sistemas</b> en el Instituto IRSO. Actualmente me
+                        encuentro <b>2do año de la carrera</b>. Laboralmente me desempeño en la actualidad como <b>Desarrollador Full-Stack </b>
+			para la empresa Movistar Argentina en el desarrolo de un ERP de la misma.
                     </Typography>
                     <div
                         style={{
@@ -472,6 +473,11 @@ export default function NavBarMobile() {
                         }}
                     />
                 </div>
+          <div className="containerMyName">
+            <h2 className="myName">
+              Ricardo Benitez .<span className="spanAnimation">&#160;</span>
+	    </h2>
+          </div>
                 <SwitchViewMobile />
             </Main>
             <Drawer
