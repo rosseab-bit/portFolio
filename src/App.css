@@ -47,7 +47,7 @@ body {
 }
 .myName {
   position: relative;
-  color: white;
+  color: #FFF !important;
   float: left;
   font-size: 2em !important;
 }
@@ -64,7 +64,7 @@ body {
   position: absolute;
   right: 0;
   width: 0; 
-  background-color: #21222c;
+  background-color: #21222c !important;
   border-left: 1px solid #FFF;
   animation: escribir 5s steps(16) infinite alternate;
 }

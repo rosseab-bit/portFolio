@@ -82,7 +82,7 @@ const NavButtons = ({ switchFunctions, props }) => {
       <p style={{ color: 'white', marginTop: '0', marginBottom: '0', fontSize: '15px' }}>Contacto</p>
     </Button>,
     <Button variant="contained" component="label" color="cvButtomColor" sx={{ marginLeft: 2, marginRight: 2 }}
-    onClick={()=>window.open('https://drive.google.com/file/d/1Colp2Kw8FEhJqCJDM7_QdZFbnuJg1Z5v/view?usp=sharing', '_blank', 'noopener,noreferrer')}
+    onClick={()=>window.open('https://drive.google.com/file/d/1DZ1qQ3ctULBOhRjHyMI0AumEHoN2JtTD/view?usp=sharing', '_blank', 'noopener,noreferrer')}
     >
         <p style={{ marginTop: '1px', marginBottom: '1px', color: 'black', fontSize: '20px' }}>Descargar CV</p>
     </Button>

@@ -1,0 +1,38 @@
+/* estilo maquina de escribir */
+.containerMyName {
+  margin: auto;
+  display: table;
+}
+.myName {
+  position: relative;
+  color: black;
+  float: left;
+  font-size: 1.6em !important;
+}
+/*.myName .myNameType {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: #21222c;
+  border-left: 1px solid #000;
+  animation: escribir 5s steps(15) infinite alternate;
+}*/
+
+.spanAnimation {
+  position: absolute;
+  right: 0;
+  width: 0; 
+  background-color: #FFF;
+  border-left: 1px solid #FFF;
+  animation: escribir 5s steps(16) infinite alternate;
+}
+
+@keyframes escribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+/* estilo maquina de escribir */

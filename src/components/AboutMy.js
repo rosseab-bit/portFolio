@@ -6,7 +6,7 @@ import Stack from "@mui/material/Stack";
 import MyAvatar from "../static/img/my_avatar.jpg";
 import NavButtons from "./NavButtons.js";
 import BannerLogos from "./BannerLogos.js";
-import AboutPicture from "../static/img/about_my.jpg";
+import AboutPicture from "../static/img/about_my.jpeg";
 import "../App.css";
 
 function AboutMy() {
@@ -76,7 +76,7 @@ function AboutMy() {
 	      trabajando como Desarrollador Full-Stack para Movistar Argentina.
               <br /> <br />
               En el 2022 comencé a estudiar para Analista de Sistemas en el
-              Instituto IRSO. En este momento me encuentro en 2do año de la
+              Instituto IRSO. En este momento me encuentro en ultimo año de la
               carrera.
             </p>
           </div>
